@@ -23,6 +23,18 @@
                     "type": "string",
                     "description": "Sets ZEPPELIN_JAVA_OPTS.  You can use this to set arbitrary spark configuration properties (e.g. spark.mesos.uris)",
                     "default": "-Dspark.mesos.coarse=true"
+                },
+                "zeppelin_hub_token": {
+                    "title": "Zeppelin Hub Token",
+                    "type": "string",
+                    "description": "Use this token to store and retrieve notebooks from Zeppelin Hub (zepl.com). If empty then it will use notes from your 'Zepl' space",
+                    "default": ""
+                },
+                "zeppelin_docker_pull": {
+                    "title": "Force Zeppelin docker pull",
+                    "type": "boolean",
+                    "description": "Force docker pull of the zeppelin image.",
+                    "default": false
                 }
             }
         },

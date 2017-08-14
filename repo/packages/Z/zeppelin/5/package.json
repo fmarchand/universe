@@ -1,0 +1,19 @@
+{
+    "packagingVersion": "2.0",
+    "name": "zeppelin",
+    "version": "0.7.1",
+    "scm": "https://gitlab.com/agaetis-lab/dcos-zeppelin/tree/master",
+    "maintainer": "fmarchand@agaetis.fr",
+    "description": "Zeppelin is a web-based notebook that enables interactive data analytics. This version will use spark on a mesos cluster and will use authentication through zepl.com\n\nNB : You will need a zepl.com account to login",
+    "framework": true,
+    "tags": [
+        "zepl",
+        "framework",
+        "bigdata",
+        "spark",
+        "notebook",
+        "interactive"
+    ],
+    "website": "http://www.agaetis.fr",
+    "postInstallNotes": "DC/OS Zeppelin is being installed!"
+}

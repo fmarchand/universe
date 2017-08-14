@@ -1,0 +1,34 @@
+{
+    "id": "/{{service.name}}",
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "{{resource.assets.container.docker.zeppelin}}",
+            "network": "HOST",
+            "forcePullImage": {{service.zeppelin_docker_pull}}
+        }
+    },
+    "healthChecks": [{
+        "protocol": "TCP",
+        "gracePeriodSeconds": 300,
+        "intervalSeconds": 60,
+        "portIndex": 0,
+        "timeoutSeconds": 15,
+        "maxConsecutiveFailures": 3
+    }],
+    "labels": {
+        "DCOS_SERVICE_NAME": "{{service.name}}",
+        "DCOS_SERVICE_SCHEME": "http",
+        "DCOS_SERVICE_PORT_INDEX": "0"
+    },
+    "env": {
+        "SPARK_CORES_MAX": "{{spark.cores_max}}",
+        "SPARK_EXECUTOR_MEMORY": "{{spark.executor_memory}}",
+        "ZEPPELIN_JAVA_OPTS": "{{service.zeppelin_java_opts}}",
+        "ZEPPELINHUB_API_TOKEN": "{{service.zeppelin_hub_token}}"
+    },
+    "cmd": null,
+    "ports": [0, 0],
+    "cpus": {{service.cpu}},
+    "mem": {{service.mem}}
+}

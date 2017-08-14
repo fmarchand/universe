@@ -1,0 +1,14 @@
+{
+  "images": {
+    "icon-small": "hhttp://downloads.agaetis.fr/zeppelin/assets/icon-service-zeppelin-small.png",
+    "icon-medium": "http://downloads.agaetis.fr/zeppelin/assets/icon-service-zeppelin-medium.png",
+    "icon-large": "http://downloads.agaetis.fr/zeppelin/assets/icon-service-zeppelin-large.png"
+  },
+  "assets": {
+    "container": {
+      "docker": {
+        "zeppelin": "fmarchand/zeppelin:0.7.1"
+      }
+    }
+  }
+}
