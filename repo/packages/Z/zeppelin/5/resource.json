@@ -1,6 +1,6 @@
 {
   "images": {
-    "icon-small": "hhttp://downloads.agaetis.fr/zeppelin/assets/icon-service-zeppelin-small.png",
+    "icon-small": "http://downloads.agaetis.fr/zeppelin/assets/icon-service-zeppelin-small.png",
     "icon-medium": "http://downloads.agaetis.fr/zeppelin/assets/icon-service-zeppelin-medium.png",
     "icon-large": "http://downloads.agaetis.fr/zeppelin/assets/icon-service-zeppelin-large.png"
   },
